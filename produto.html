@@ -1,129 +1,211 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <title>Document</title>
 
-    <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="assets/css/styles.css" />
-    <link rel="stylesheet" href="assets/css/utils.css" />
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css"
-    />
-  </head>
-  <body class="bg-slate-100">
-    <main class="container mx-auto flex flex-col items-center">
-      <div class="card w-50">
-        <div class="card-header"></div>
-        <div class="card-body">
-          <img src="https://github.com/DaniloCHGS.png" alt="" />
-          <div class="description">
-            <h1>Nome da empresa</h1>
-            <div>
-              <a href="">@instagram</a>
-              <a href="index.html">Ver todos produtos</a>
-            </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <title>Document</title>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet" />
+  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/utils.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lightgallery/dist/css/lightgallery.min.css" />
+</head>
+
+<body class="bg-slate-100">
+  <main class="container mx-auto flex flex-col items-center" id="initial">
+    <div class="card w-50">
+      <div class="card-header"></div>
+      <div class="card-body">
+        <img src="https://github.com/DaniloCHGS.png" alt="" />
+        <div class="description">
+          <h1>Nome da empresa</h1>
+          <div>
+            <ul class="links">
+              <li class="li link">
+                <a href=""><i class='bx bxl-instagram' ></i></a>
+              </li>
+            </ul>
+            <a href="index.html" class="btn-back"><i class='bx bx-chevron-left' ></i> todos produtos</a>
           </div>
         </div>
       </div>
+    </div>
 
-      <div class="card w-50">
-        <section class="list-products">
-          <div class="product product-descriptions">
-            <img
-                src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-                alt="Ovo de colher"
-              />
-            </a>
-            <div class="descriptions">
-              <h3 class="text-slate-950">Ovo de colher</h3>
-              <p class="text-slate-500">
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-                Dignissimos nobis impedit quos nemo iusto pariatur consectetur
-                corrupti vel tempora debitis odit ab, repellat quisquam
-                reiciendis voluptatem ex quo necessitatibus quidem. Lorem ipsum
-                dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
-                iure est quisquam iste totam error exercitationem aliquid
-                itaque?
-              </p>
-              <ul>
-                <li class="list-disc">Lorem</li>
-                <li class="list-disc">Lorem</li>
-                <li class="list-disc">Lorem</li>
-              </ul>
-            </div>
+    <div class="card w-50">
+      <section class="list-products">
+        <div class="product product-descriptions">
+          <a href="#" class="btn-wishlist">
+            <i class='bx bx-heart' ></i>
+            <i class='bx bxs-heart' ></i>
+          </a>
+          <img src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
+            alt="Ovo de colher" />
+          </a>
+          <div class="descriptions">
+            <h3 class="text-slate-950">
+              <a href="#" class="btn-share"><i class='bx bx-share-alt' ></i></a> 
+              Ovo de colher
+            </h3>
+            <ul class="stars">
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+            </ul>
+            <span class="price">R$ 30,00</span>
+            <p class="text-slate-500">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Dignissimos nobis impedit quos nemo iusto pariatur consectetur
+              corrupti vel tempora debitis odit ab, repellat quisquam
+              reiciendis voluptatem ex quo necessitatibus quidem. Lorem ipsum
+              dolor sit amet consectetur adipisicing elit. Blanditiis suscipit
+              iure est quisquam iste totam error exercitationem aliquid
+              itaque?
+            </p>
           </div>
-        </section>
-        <section class="gallery lightgallery">
-          <a
-            href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-          >
-            <img
-              src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-              alt="Ovo de colher"
-            />
-          </a>
-          <a
-            href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-          >
-            <img
-              src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-              alt="Ovo de colher"
-            />
-          </a>
-          <a
-            href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-          >
-            <img
-              src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-              alt="Ovo de colher"
-            />
-          </a>
-          <a
-            href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-          >
-            <img
-              src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-              alt="Ovo de colher"
-            />
-          </a>
-          <a
-            href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-          >
-            <img
-              src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-              alt="Ovo de colher"
-            />
-          </a>
-          <a
-            href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-          >
-            <img
-              src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
-              alt="Ovo de colher"
-            />
-          </a>
-        </section>
-      </div>
+        </div>
+      </section>
 
-      <footer>
-        &copy; 2023 <span>Sala 8 <a href="#">Entre contato agora</a> </span>
-      </footer>
-    </main>
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery-all.min.js"></script>
-  </body>
+      <section>
+        <h2 class="card-title">Mais sobre o produto</h2>
+        <div class="gallery lightgallery">
+          <a href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg">
+            <img src="https://fakeimg.pl/237x200/"
+              alt="Lorem, ipsum dolor sit amet consectetur adipisicing elit." />
+          </a>
+          <a href="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg">
+            <img src="https://fakeimg.pl/237x200/"
+              alt="Ovo de colher" />
+          </a>
+          <a href="https://fakeimg.pl/237x200/">
+            <img src="https://fakeimg.pl/237x200/"
+              alt="Ovo de colher" />
+          </a>
+          <a href="https://fakeimg.pl/237x200/">
+            <img src="https://fakeimg.pl/237x200/"
+              alt="Ovo de colher" />
+          </a>
+          <a href="https://fakeimg.pl/237x200/">
+            <img src="https://fakeimg.pl/237x200/"
+              alt="Ovo de colher" />
+          </a>
+          <a href="https://fakeimg.pl/237x200/">
+            <img src="https://fakeimg.pl/237x200/"
+              alt="Ovo de colher" />
+          </a>
+        </div>
+      </section>
+
+      <section class="list-products">
+        <h2 class="card-title">Produtos parecidos</h2>
+        <div class="products">
+          <div class="product">
+            <a href="produto.html">
+              <img src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
+                alt="Ovo de colher" />
+              <h3 class="text-slate-950">Ovo de colher</h3>
+            </a>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a class="btn btn-icon" href="produto.html">Saiba mais aqui <i class="bx bxs-chevron-right"></i></a>
+          </div>
+          <div class="product">
+            <a href="produto.html">
+              <img src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
+                alt="Ovo de colher" />
+              <h3 class="text-slate-950">Ovo de colher</h3>
+            </a>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a class="btn btn-icon" href="produto.html">Saiba mais aqui <i class="bx bxs-chevron-right"></i></a>
+          </div>
+          <div class="product">
+            <a href="produto.html">
+              <img src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
+                alt="Ovo de colher" />
+              <h3 class="text-slate-950">Ovo de colher</h3>
+            </a>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a class="btn btn-icon" href="produto.html">Saiba mais aqui <i class="bx bxs-chevron-right"></i></a>
+          </div>
+          <div class="product">
+            <a href="produto.html">
+              <img src="https://f.i.uol.com.br/fotografia/2020/03/28/15854120445e7f77cce82b2_1585412044_3x2_md.jpg"
+                alt="Ovo de colher" />
+              <h3 class="text-slate-950">Ovo de colher</h3>
+            </a>
+            <p class="text-slate-500">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </p>
+            <a class="btn btn-icon" href="produto.html">Saiba mais aqui <i class="bx bxs-chevron-right"></i></a>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <h2 class="card-title">O que nossos clientes dizem</h2>
+        <div class="assessments">
+          <div class="assessment">
+            <div class="assessment-infos">
+              <h4>Nome</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quam ea officiis animi consequatur facere aut accusantium, magnam deleniti, tempora neque impedit quia quasi voluptatibus praesentium? Itaque autem consectetur totam.</p>
+            </div>
+            <ul class="stars">
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+            </ul>
+          </div>
+          <div class="assessment">
+            <div class="assessment-infos">
+              <h4>Nome</h4>
+              <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Totam quam ea officiis animi consequatur facere aut accusantium, magnam deleniti, tempora neque impedit quia quasi voluptatibus praesentium? Itaque autem consectetur totam.</p>
+            </div>
+            <ul class="stars">
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+              <li class="star"><i class='bx bxs-star'></i></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <footer>
+      <div class="btn-floating">
+        <a href="" title="Atendimento no Whatsapp">
+          <i class='bx bxl-whatsapp' ></i>
+        </a>
+        <a href="#" data-scroll-top title="Voltar ao topo">
+          <i class='bx bxs-chevron-up'></i>
+        </a>
+      </div>
+      &copy; 2023 <span>Sala 8 <a href="#">Entre contato agora</a> </span>
+    </footer>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lightgallery/dist/js/lightgallery-all.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
+    integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/app.js"></script>
+</body>
+
 </html>
